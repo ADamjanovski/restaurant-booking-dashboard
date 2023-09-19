@@ -1,0 +1,21 @@
+import { Routes, Route, Navigate } from "react-router-dom";
+import MainPage from "./pages/MainPage";
+import LoginPage from "./pages/LoginPage";
+import RestaurantInformation from "./components/RestaurantInformation";
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<Navigate to="/login" replace={true} />} />
+      <Route path="/main" element={<MainPage />}>
+        <Route
+          path="restaurantInformation"
+          element={<RestaurantInformation />}
+        />
+      </Route>
+      <Route path="/login" element={<LoginPage />} />
+    </Routes>
+  );
+}
+
+export default App;

@@ -16,7 +16,7 @@ const RestaurantInformation = () => {
     try {
       const response = useHttp({
         method: "DELETE",
-        url: `https://restaurant-booking-backend-damjanovski.onrender.com/api/dashboard/category/${id}`,
+        url: `http://localhost:3000/api/dashboard/category/${id}`,
         headers: {
           Authorization: `Bearer ${authCtx.token}`,
         },

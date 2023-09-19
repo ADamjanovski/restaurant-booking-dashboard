@@ -8,7 +8,7 @@ const UpcomingReservations = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [reservations, setReservations] = useState();
   const request = {
-    url: `https://restaurant-booking-backend-damjanovski.onrender.com/api/dashboard/upcomingReservations/${authCtx.user.restaurantId}`,
+    url: `http://localhost:3000/api/dashboard/upcomingReservations/${authCtx.user.restaurantId}`,
     method: "GET",
     headers: {
       Accept: "application/json",

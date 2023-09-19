@@ -110,7 +110,7 @@ export const AuthContextProvider = (props) => {
 
   const registerHandler = async (User) => {
     try {
-      const data = await fetch("https://restaurant-booking-backend-damjanovski.onrender.com/api/dashboard", {
+      const data = await fetch("http://localhost:3000/api/dashboard", {
         method: "POST",
         body: JSON.stringify({
           name: User.name,

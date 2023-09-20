@@ -31,7 +31,7 @@ const Images = () => {
   const deleteImage = (imageName, id) => {
     try {
       const data = useHttp({
-        url: `https://restaurant-booking-backend-damjanovski-phi.vercel.app/api/dashboard/image/${id}?imageName=${imageName}`,
+        url: `https://restaurant-booking-backend-damjanovski.onrender.com/api/dashboard/image/${id}?imageName=${imageName}`,
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authCtx.token}`,
@@ -56,7 +56,7 @@ const Images = () => {
     formData.append("image", selectedFile);
     try {
       const response = await fetch(
-        `https://restaurant-booking-backend-damjanovski-phi.vercel.app/api/dashboard/upload/${authCtx.user.restaurantId}`,
+        `https://restaurant-booking-backend-damjanovski.onrender.com/api/dashboard/upload/${authCtx.user.restaurantId}`,
         {
           method: "POST",
           body: formData,

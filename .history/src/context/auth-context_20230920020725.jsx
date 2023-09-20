@@ -56,7 +56,7 @@ export const AuthContextProvider = (props) => {
 
   const loginHandler = async (username, password) => {
     try {
-      const data = await fetch("https://restaurant-booking-backend-damjanovski-phi.vercel.app/api/dashboard/login", {
+      const data = await fetch("https://restaurant-booking-backend-damjanovski-phi.vercel.app//api/dashboard/login", {
         method: "POST",
         body: JSON.stringify({
           username: username,
@@ -110,7 +110,7 @@ export const AuthContextProvider = (props) => {
 
   const registerHandler = async (User) => {
     try {
-      const data = await fetch("https://restaurant-booking-backend-damjanovski-phi.vercel.app/api/dashboard", {
+      const data = await fetch("https://restaurant-booking-backend-damjanovski.onrender.com/api/dashboard", {
         method: "POST",
         body: JSON.stringify({
           name: User.name,

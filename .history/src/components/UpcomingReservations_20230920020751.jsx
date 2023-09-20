@@ -23,7 +23,7 @@ const UpcomingReservations = () => {
   const StatusHandler = (id, status) => {
     setIsLoading(true);
     const acceptRequest = {
-      url: `https://restaurant-booking-backend-damjanovski-phi.vercel.app/api/dashboard/updateStatus`,
+      url: `https://restaurant-booking-backend-damjanovski.onrender.com/api/dashboard/updateStatus`,
       method: "PATCH",
       body: JSON.stringify({
         id: id,

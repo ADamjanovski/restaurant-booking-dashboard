@@ -12,7 +12,7 @@ const Images = () => {
   const getImages = () => {
     try {
       const data = useHttp({
-        url: `http://localhost:3000/api/restaurants/images?restaurantId=${authCtx.user.restaurantId}`,
+        url: `https://restaurant-booking-backend-damjanovski-phi.vercel.app/api/restaurants/images?restaurantId=${authCtx.user.restaurantId}`,
         method: "GET",
         headers: {
           Accept: "application/json",

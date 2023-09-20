@@ -12,7 +12,7 @@ const Images = () => {
   const getImages = () => {
     try {
       const data = useHttp({
-        url: `http://localhost:3000/api/restaurants/images?restaurantId=${authCtx.user.restaurantId}`,
+        url: `https://restaurant-booking-backend-damjanovski-phi.vercel.app/api/restaurants/images?restaurantId=${authCtx.user.restaurantId}`,
         method: "GET",
         headers: {
           Accept: "application/json",
@@ -31,7 +31,7 @@ const Images = () => {
   const deleteImage = (imageName, id) => {
     try {
       const data = useHttp({
-        url: `http://localhost:3000/api/dashboard/image/${id}?imageName=${imageName}`,
+        url: `https://restaurant-booking-backend-damjanovski-phi.vercel.app/api/dashboard/image/${id}?imageName=${imageName}`,
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authCtx.token}`,

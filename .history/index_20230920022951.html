@@ -14,14 +14,13 @@
   </head>
   <body>
     <div id="root"></div>
-    <script type="module">
+    <script type="module" src="/src/main.jsx">
       const scripts = document.querySelectorAll('script[type="module"]');
-      scripts.forEach((script) => {
-        if (script.src.endsWith(".jsx")) {
-          script.type = "application/javascript";
-        }
-      });
-      import("./src/main.jsx");
+           scripts.forEach((script) => {
+             if (script.src.endsWith('.jsx')) {
+               script.type = 'application/javascript';
+             }
+           });
     </script>
   </body>
 </html>

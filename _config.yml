@@ -1,5 +1,0 @@
-defaults:
-  - scope:
-      path: ""
-    values:
-      content_type: "application/javascript"
